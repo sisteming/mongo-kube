@@ -1,0 +1,706 @@
+{
+  "version": 1,
+  "width": 118,
+  "height": 31,
+  "duration": 95.572942,
+  "command": null,
+  "title": "Demo 1: Basic replica set",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      2.056297,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000208,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.177251,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:32 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000212,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      4.954741,
+      "\u001b[7mkubectl run mongod1 --image=mongo -- mongod --port=27017 --replSet demo1\u001b[27m"
+    ],
+    [
+      0.24765,
+      "\u001b[72D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mr\u001b[27mu\u001b[27mn\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m1\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mi\u001b[27mm\u001b[27ma\u001b[27mg\u001b[27me\u001b[27m=\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m \u001b[27m-\u001b[27m-\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m=\u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mr\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mS\u001b[27me\u001b[27mt\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m1"
+    ],
+    [
+      3.1e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.5e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.009703,
+      "\u001b]2;kubectl run mongod1 --image=mongo -- mongod --port=27017 --replSet demo1\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.179935,
+      "deployment \"mongod1\" created\r\n"
+    ],
+    [
+      0.003453,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000529,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.165815,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:37 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      6.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.809138,
+      "\u001b[7mkubectl run mongod2 --image=mongo -- mongod --port=27017 --replSet demo1\u001b[27m"
+    ],
+    [
+      0.201117,
+      "\u001b[72D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mr\u001b[27mu\u001b[27mn\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m2\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mi\u001b[27mm\u001b[27ma\u001b[27mg\u001b[27me\u001b[27m=\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m \u001b[27m-\u001b[27m-\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m=\u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mr\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mS\u001b[27me\u001b[27mt\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m1"
+    ],
+    [
+      3.6e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007252,
+      "\u001b]2;kubectl run mongod2 --image=mongo -- mongod --port=27017 --replSet demo1\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.209468,
+      "deployment \"mongod2\" created\r\n"
+    ],
+    [
+      0.003706,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000191,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.210361,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:41 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000115,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.653172,
+      "\u001b[7mkubectl run mongod3 --image=mongo -- mongod --port=27017 --replSet demo1\u001b[27m"
+    ],
+    [
+      0.290938,
+      "\u001b[72D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mr\u001b[27mu\u001b[27mn\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m3\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mi\u001b[27mm\u001b[27ma\u001b[27mg\u001b[27me\u001b[27m=\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m \u001b[27m-\u001b[27m-\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m=\u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mr\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mS\u001b[27me\u001b[27mt\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m1"
+    ],
+    [
+      7.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.00645,
+      "\u001b]2;kubectl run mongod3 --image=mongo -- mongod --port=27017 --replSet demo1\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.191754,
+      "deployment \"mongod3\" created\r\n"
+    ],
+    [
+      0.003643,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000218,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.184577,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:44 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000113,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      1.9e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.119997,
+      "\u001b[7mkubectl expose deployment mongod1 --type=NodePort --port 27017\u001b[27m"
+    ],
+    [
+      0.532073,
+      "\u001b[62D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27me\u001b[27mx\u001b[27mp\u001b[27mo\u001b[27ms\u001b[27me\u001b[27m \u001b[27md\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mo\u001b[27my\u001b[27mm\u001b[27me\u001b[27mn\u001b[27mt\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m1\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mt\u001b[27my\u001b[27mp\u001b[27me\u001b[27m=\u001b[27mN\u001b[27mo\u001b[27md\u001b[27me\u001b[27mP\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7"
+    ],
+    [
+      3.6e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      5.6e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007626,
+      "\u001b]2;kubectl expose deployment mongod1 --type=NodePort --port 27017\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.170503,
+      "service \"mongod1\" exposed\r\n"
+    ],
+    [
+      0.003558,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000203,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.178401,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:48 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.017885,
+      "\u001b[7mkubectl expose deployment mongod2 --type=NodePort --port 27017\u001b[27m"
+    ],
+    [
+      0.18955,
+      "\u001b[62D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27me\u001b[27mx\u001b[27mp\u001b[27mo\u001b[27ms\u001b[27me\u001b[27m \u001b[27md\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mo\u001b[27my\u001b[27mm\u001b[27me\u001b[27mn\u001b[27mt\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m2\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mt\u001b[27my\u001b[27mp\u001b[27me\u001b[27m=\u001b[27mN\u001b[27mo\u001b[27md\u001b[27me\u001b[27mP\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7"
+    ],
+    [
+      2.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007354,
+      "\u001b]2;kubectl expose deployment mongod2 --type=NodePort --port 27017\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.14555,
+      "service \"mongod2\" exposed\r\n"
+    ],
+    [
+      0.003725,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000187,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.171338,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:52 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      7.5e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.416876,
+      "\u001b[7mkubectl expose deployment mongod3 --type=NodePort --port 27017\u001b[27m"
+    ],
+    [
+      0.246049,
+      "\u001b[62D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27me\u001b[27mx\u001b[27mp\u001b[27mo\u001b[27ms\u001b[27me\u001b[27m \u001b[27md\u001b[27me\u001b[27mp\u001b[27ml\u001b[27mo\u001b[27my\u001b[27mm\u001b[27me\u001b[27mn\u001b[27mt\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m3\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mt\u001b[27my\u001b[27mp\u001b[27me\u001b[27m=\u001b[27mN\u001b[27mo\u001b[27md\u001b[27me\u001b[27mP\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m2\u001b[27m7\u001b[27m0\u001b[27m1\u001b[27m7"
+    ],
+    [
+      2.7e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      6.5e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007607,
+      "\u001b]2;kubectl expose deployment mongod3 --type=NodePort --port 27017\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.14516,
+      "service \"mongod3\" exposed\r\n"
+    ],
+    [
+      0.002242,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000213,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.171711,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:56 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000138,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.2e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.901725,
+      "\u001b[7mkubectl get services\u001b[27m"
+    ],
+    [
+      0.205147,
+      "\u001b[20D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27ms"
+    ],
+    [
+      3e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.006926,
+      "\u001b]2;kubectl get services\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.150352,
+      "NAME         CLUSTER-IP   EXTERNAL-IP   PORT(S)           AGE\r\nkubernetes   10.0.0.1     <none>        443/TCP           39d\r\nmongod1      10.0.0.99    <nodes>       27017:30571/TCP   11s\r\nmongod2      10.0.0.210   <nodes>       "
+    ],
+    [
+      3.4e-05,
+      "27017:31113/TCP   8s\r\nmongod3      10.0.0.61    <nodes>       27017:32531/TCP   4s\r\n"
+    ],
+    [
+      0.003411,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.142839,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:57:59 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      9.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      6.4e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.300071,
+      "\u001b[7mkubectl get pods -o wide\u001b[27m"
+    ],
+    [
+      0.348192,
+      "\u001b[24D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mo\u001b[27md\u001b[27ms\u001b[27m \u001b[27m-\u001b[27mo\u001b[27m \u001b[27mw\u001b[27mi\u001b[27md\u001b[27me"
+    ],
+    [
+      2.8e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      1.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.006827,
+      "\u001b]2;kubectl get pods -o wide\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.14503,
+      "NAME                       READY     STATUS    RESTARTS   AGE       IP           NODE\r\nmongod1-1634398958-5m75m   1/1       Running   0          26s       172.17.0.3   minikube\r\nmongod2-1841099504-9nz31   1/1       Running   0        "
+    ],
+    [
+      4.1e-05,
+      "  22s       172.17.0.4   minikube\r\nmongod3-2047800050-khs77   1/1       Running   0          19s       172.17.0.7   minikube\r\n"
+    ],
+    [
+      0.002537,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000204,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007"
+    ],
+    [
+      2.9e-05,
+      "\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.148479,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:58:03 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.1e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.9966,
+      "\u001b[7mPORT=`kubectl get services --no-headers mongod1 | awk '{print $4}' | awk -F\":\" '{print $2}' | tr -d '/TCP'`\u001b[27m"
+    ],
+    [
+      0.456048,
+      "\u001b[107D\u001b[27mP\u001b[27mO\u001b[27mR\u001b[27mT\u001b[27m=\u001b[27m`\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27ms\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mn\u001b[27mo\u001b[27m-\u001b[27mh\u001b[27me\u001b[27ma\u001b[27md\u001b[27me\u001b[27mr\u001b[27ms\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27md\u001b[27m1\u001b[27m \u001b[27m|\u001b[27m \u001b[27ma\u001b[27mw\u001b[27mk\u001b[27m \u001b[27m'\u001b[27m{\u001b[27mp\u001b[27mr\u001b[27mi\u001b[27mn\u001b[27mt\u001b[27m \u001b[27m$\u001b[27m4\u001b[27m}\u001b[27m'\u001b[27m \u001b[27m|\u001b[27m \u001b[27ma\u001b[27mw\u001b[27mk\u001b[27m \u001b[27m-\u001b[27mF\u001b[27m\"\u001b[27m:\u001b[27m\"\u001b[27m \u001b[27m'\u001b[27m{\u001b[27mp\u001b[27mr\u001b[27mi\u001b[27mn\u001b[27mt\u001b[27m \u001b[27m$\u001b[27m2\u001b[27m}\u001b[27m'\u001b[27m \u001b[27m|\u001b[27m \u001b[27mt\u001b[27mr\u001b[27m \u001b[27m-\u001b[27md\u001b[27m \u001b[27m'\u001b[27m/\u001b[27mT\u001b[27mC\u001b[27mP\u001b[27m'\u001b[27m`"
+    ],
+    [
+      2.5e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      1.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.006387,
+      "\u001b]2;PORT= \u0007\u001b]1;get\u0007"
+    ],
+    [
+      0.131053,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r"
+    ],
+    [
+      0.000145,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.16713,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:58:08 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.1e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      5.937939,
+      "\u001b[7mmongo --host 192.168.99.100 --port $PORT\u001b[27m"
+    ],
+    [
+      0.657448,
+      "\u001b[40D\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mh\u001b[27mo\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m1\u001b[27m9\u001b[27m2\u001b[27m.\u001b[27m1\u001b[27m6\u001b[27m8\u001b[27m.\u001b[27m9\u001b[27m9\u001b[27m.\u001b[27m1\u001b[27m0\u001b[27m0\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mo\u001b[27mr\u001b[27mt\u001b[27m \u001b[27m$\u001b[27mP\u001b[27mO\u001b[27mR\u001b[27mT"
+    ],
+    [
+      3.1e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.009743,
+      "\u001b]2;mongo --host 192.168.99.100 --port $PORT\u0007\u001b]1;mongo\u0007"
+    ],
+    [
+      0.030995,
+      "MongoDB shell version: 3.2.12\r\n"
+    ],
+    [
+      0.059597,
+      "connecting to: 192.168.99.100:30571/test\r\n"
+    ],
+    [
+      0.004475,
+      "Server has startup warnings: \r\n2017-05-17T20:57:42.425+0000 I STORAGE  [initandlisten] \r\n2017-05-17T20:57:42.425+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine\r\n"
+    ],
+    [
+      3.5e-05,
+      "2017-05-17T20:57:42.425+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem\r\n2017-05-17T20:57:42.940+0000 I CONTROL  [initandlisten] \r\n2017-05-17T20:57:42.940+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.\r\n2017-05-17T20:57:42.940+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.\r\n2017-05-17T20:57:42.940+0000 I CONTROL  [initandlisten] \r\n"
+    ],
+    [
+      0.004732,
+      "> "
+    ],
+    [
+      3.550441,
+      "rs.i"
+    ],
+    [
+      2.5e-05,
+      "nitiate()"
+    ],
+    [
+      0.358633,
+      "\u001b[3G\u001b[Jrs.initiate()\u001b[16G"
+    ],
+    [
+      2.9e-05,
+      "\r\n"
+    ],
+    [
+      0.026259,
+      "{\r\n\t\"info2\" : \"no configuration specified. Using a default configuration for the set\",\r\n\t\"me\" : \"mongod1-1634398958-5m75m:27017\",\r\n\t\"ok\" : 1\r\n}\r\n"
+    ],
+    [
+      0.001436,
+      "demo1:SECONDARY> "
+    ],
+    [
+      1.869323,
+      "\u001b[18G\u001b[J\u001b[18G"
+    ],
+    [
+      3e-05,
+      "\r\n"
+    ],
+    [
+      0.000856,
+      "demo1:SECONDARY> "
+    ],
+    [
+      1.454004,
+      "\u001b[18G\u001b[J\u001b[18G"
+    ],
+    [
+      3.6e-05,
+      "\r\n"
+    ],
+    [
+      0.000706,
+      "demo1:PRIMARY> "
+    ],
+    [
+      9.29784,
+      "var cfg = rs.conf()"
+    ],
+    [
+      0.232809,
+      "\u001b[16G\u001b[Jvar cfg = rs.conf()\u001b[35G"
+    ],
+    [
+      2.8e-05,
+      "\r\n"
+    ],
+    [
+      0.001356,
+      "demo1:PRIMARY> "
+    ],
+    [
+      3.463896,
+      "cfg.mem"
+    ],
+    [
+      2.7e-05,
+      "bers[0].host=\"172.17.0"
+    ],
+    [
+      2.7e-05,
+      ".3:27017\""
+    ],
+    [
+      0.247605,
+      "\u001b[16G\u001b[Jcfg.members[0].host=\"172.17.0.3:27017\"\u001b[54G"
+    ],
+    [
+      3.3e-05,
+      "\r\n"
+    ],
+    [
+      0.000186,
+      "172.17.0.3:27017\r\n"
+    ],
+    [
+      0.001157,
+      "demo1:PRIMARY> "
+    ],
+    [
+      3.04665,
+      "rs.reconfig(cfg"
+    ],
+    [
+      2.7e-05,
+      ")"
+    ],
+    [
+      0.256048,
+      "\u001b[16G\u001b[Jrs.reconfig(cfg)\u001b[32G"
+    ],
+    [
+      2.9e-05,
+      "\r\n"
+    ],
+    [
+      0.002351,
+      "{ \"ok\" : 1 }\r\n"
+    ],
+    [
+      0.000745,
+      "demo1:PRIMARY> "
+    ],
+    [
+      3.159184,
+      "rs.add(\"172.1"
+    ],
+    [
+      2.2e-05,
+      "7.0.4:27017\")"
+    ],
+    [
+      0.197688,
+      "\u001b[16G\u001b[Jrs.add(\"172.17.0.4:27017\")\u001b[42G"
+    ],
+    [
+      3.3e-05,
+      "\r\n"
+    ],
+    [
+      0.007671,
+      "{ \"ok\" : 1 }\r\n"
+    ],
+    [
+      0.0018,
+      "demo1:PRIMARY> "
+    ],
+    [
+      3.00688,
+      "rs.add(\"172"
+    ],
+    [
+      2.8e-05,
+      ".17.0.7:27017\")"
+    ],
+    [
+      0.374523,
+      "\u001b[16G\u001b[Jrs.add(\"172.17.0.7:27017\")\u001b[42G"
+    ],
+    [
+      3e-05,
+      "\r\n"
+    ],
+    [
+      0.005503,
+      "{ \"ok\" : 1 }\r\n"
+    ],
+    [
+      0.000723,
+      "demo1:PRIMARY> "
+    ],
+    [
+      0.503698,
+      "r"
+    ],
+    [
+      0.199504,
+      "s"
+    ],
+    [
+      0.095535,
+      "."
+    ],
+    [
+      0.17215,
+      "s"
+    ],
+    [
+      0.244936,
+      "t"
+    ],
+    [
+      0.217899,
+      "a"
+    ],
+    [
+      0.215936,
+      "t"
+    ],
+    [
+      0.088091,
+      "u"
+    ],
+    [
+      0.162813,
+      "s"
+    ],
+    [
+      0.321338,
+      "("
+    ],
+    [
+      0.247858,
+      ")"
+    ],
+    [
+      0.821104,
+      "\u001b[16G\u001b[Jrs.status()\u001b[27G"
+    ],
+    [
+      3.3e-05,
+      "\r\n"
+    ],
+    [
+      0.002494,
+      "{\r\n\t\"set\" : \"demo1\",\r\n\t\"date\" : ISODate(\"2017-05-17T20:58:48.786Z\"),\r\n\t\"myState\" : 1,\r\n\t\"term\" : NumberLong(1),\r\n\t\"heartbeatIntervalMillis\" : NumberLong(2000),\r\n\t\"optimes\" : {\r\n\t\t\"lastCommittedOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t},\r\n\t\t\"appliedOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t},\r\n\t\t\"durableOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t}\r\n\t},\r\n\t\"members\" : [\r\n\t\t{\r\n\t\t\t\"_id\" : 0,\r\n\t\t\t\"name\" : \"172.17.0.3:27017\",\r\n\t\t\t\"health\" : 1,\r\n\t\t\t\"state\" : 1,\r\n\t\t\t\"stateStr\" : \"PRIMARY\",\r\n\t\t\t\"uptime\" : 66,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-05-17T20:58:45Z\"),\r\n\t\t\t\"infoMessage\" : \"could not find member to sync from\",\r\n\t\t\t\"electionTime\" : Timestamp(1495054698, 2),\r\n\t\t\t\"electionDate\" : ISODate(\"2017-05-17T20:58:18Z\"),\r\n\t\t\t\"configVersion\" : 4,\r\n\t\t\t\"self\" : true\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"_id\" : 1,\r\n\t\t\t\"name\" : \"172.17.0.4:27017\",\r\n\t\t\t\"health\" : 1,"
+    ],
+    [
+      4.7e-05,
+      "\r\n\t\t\t\"state\" : 2,\r\n\t\t\t\"stateStr\" : \"SECONDARY\",\r\n\t\t\t\"uptime\" : 6,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDurable\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-05-17T20:58:45Z\"),\r\n\t\t\t\"optimeDurableDate\" : ISODate(\"2017-05-17T20:58:45Z\"),\r\n\t\t\t\"lastHeartbeat\" : ISODate(\"2017-05-17T20:58:47.496Z\"),\r\n\t\t\t\"lastHeartbeatRecv\" : ISODate(\"2017-05-17T20:58:45.502Z\"),\r\n\t\t\t\"pingMs\" : NumberLong(0),\r\n\t\t\t\"syncingTo\" : \"172.17.0.3:27017\",\r\n\t\t\t\"configVersion\" : 4\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"_id\" : 2,\r\n\t\t\t\"name\" : \"172.17.0.7:27017\",\r\n\t\t\t\"health\" : 1,\r\n\t\t\t\"state\" : 2,\r\n\t\t\t\"stateStr\" : \"SECONDARY\",\r\n\t\t\t\"uptime\" : 3,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDurable\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1495054725, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-05-17T20:58:45Z\"),\r\n\t\t\t\"optimeDurableDate\" : ISODate(\"2017-05-17T20:58:45Z\"),\r\n\t\t\t\"lastHeartbeat"
+    ],
+    [
+      8e-05,
+      "\" : ISODate(\"2017-05-17T20:58:47.496Z\"),\r\n\t\t\t\"lastHeartbeatRecv\" : ISODate(\"2017-05-17T20:58:45.573Z\"),\r\n\t\t\t\"pingMs\" : NumberLong(1),\r\n\t\t\t\"configVersion\" : 4\r\n\t\t}\r\n\t],\r\n\t\"ok\" : 1\r\n}\r\n"
+    ],
+    [
+      0.000779,
+      "demo1:PRIMARY> "
+    ],
+    [
+      14.609544,
+      "\r\nbye\r\n"
+    ],
+    [
+      0.005721,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                     \r \r\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo1\u0007"
+    ],
+    [
+      4.2e-05,
+      "\u001b]1;..ernetes/demo1\u0007"
+    ],
+    [
+      0.202767,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:59:03 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo1 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000115,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.4e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      1.902369,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

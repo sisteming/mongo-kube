@@ -1,0 +1,13 @@
+FROM mongo
+MAINTAINER Marco Bonezzi "marco@mongodb.com"
+
+ENV REFRESHED_AT 2017-03-28
+# Copy the mongo-watch.sh script to the container
+COPY mongo-watch.sh /mongo-watch.sh
+#RUN apt-get -qqy update && \
+#   apt-get install -qqy \
+#        netcat
+RUN chmod +x /mongo-watch.sh
+
+# COMMAND TO RUN WHEN RUNNING THE CONTAINER
+CMD ["/mongo-watch.sh"]

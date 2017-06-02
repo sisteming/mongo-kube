@@ -1,0 +1,586 @@
+{
+  "version": 1,
+  "width": 173,
+  "height": 23,
+  "duration": 63.854715,
+  "command": null,
+  "title": "Demo 2: Replica Set as a StatefulSet - StatefulSet",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      3.070399,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.232423,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:03 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.00025,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      1.7587,
+      "\u001b[H\u001b[2J\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:03 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.031761,
+      "\u001b[7mkubectl apply -f demo2-persistentVolume.yaml\u001b[27m"
+    ],
+    [
+      0.345983,
+      "\u001b[44D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mp\u001b[27me\u001b[27mr\u001b[27ms\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27me\u001b[27mn\u001b[27mt\u001b[27mV\u001b[27mo\u001b[27ml\u001b[27mu\u001b[27mm\u001b[27me\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      3e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l"
+    ],
+    [
+      4.3e-05,
+      "\r\r\n"
+    ],
+    [
+      0.015533,
+      "\u001b]2;kubectl apply -f demo2-persistentVolume.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.277131,
+      "persistentvolume \"pv0\" created\r\n"
+    ],
+    [
+      0.069554,
+      "persistentvolume \"pv1\" created\r\n"
+    ],
+    [
+      0.068244,
+      "persistentvolume \"pv2\" created\r\n"
+    ],
+    [
+      0.068206,
+      "persistentvolume \"pv3\" created\r\n"
+    ],
+    [
+      0.005117,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.210252,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:09 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      5.3e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.57423,
+      "\u001b[7mkubectl apply -f demo2-persistentVolumeClaim.yaml\u001b[27m"
+    ],
+    [
+      0.265052,
+      "\u001b[49D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mp\u001b[27me\u001b[27mr\u001b[27ms\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27me\u001b[27mn\u001b[27mt\u001b[27mV\u001b[27mo\u001b[27ml\u001b[27mu\u001b[27mm\u001b[27me\u001b[27mC\u001b[27ml\u001b[27ma\u001b[27mi\u001b[27mm\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      5e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007762,
+      "\u001b]2;kubectl apply -f demo2-persistentVolumeClaim.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.184363,
+      "persistentvolumeclaim \"datadir-mongo-0\" created\r\n"
+    ],
+    [
+      0.076476,
+      "persistentvolumeclaim \"datadir-mongo-1\" created\r\n"
+    ],
+    [
+      0.070259,
+      "persistentvolumeclaim \"datadir-mongo-2\" created\r\n"
+    ],
+    [
+      0.048582,
+      "persistentvolumeclaim \"datadir-mongo-3\" created\r\n"
+    ],
+    [
+      0.004612,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.000199,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.216893,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:12 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.4e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000107,
+      "\u001b[?2004h"
+    ],
+    [
+      2.620246,
+      "\u001b[7mkubectl apply -f demo2-headlessService.yaml\u001b[27m"
+    ],
+    [
+      0.301621,
+      "\u001b[43D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mh\u001b[27me\u001b[27ma\u001b[27md\u001b[27ml\u001b[27me\u001b[27ms\u001b[27ms\u001b[27mS\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      2.6e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.011205,
+      "\u001b]2;kubectl apply -f demo2-headlessService.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.222219,
+      "service \"mongo\" created\r\n"
+    ],
+    [
+      0.006464,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.197372,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:16 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      9.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      9.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.685119,
+      "\u001b[7mkubectl apply -f demo2-statefulset.yaml\u001b[27m"
+    ],
+    [
+      0.396815,
+      "\u001b[39D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27me\u001b[27mf\u001b[27mu\u001b[27ml\u001b[27ms\u001b[27me\u001b[27mt\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      4.1e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007959,
+      "\u001b]2;kubectl apply -f demo2-statefulset.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.211163,
+      "statefulset \"mongo\" created\r\n"
+    ],
+    [
+      0.004129,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.000369,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.253602,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:20 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.504544,
+      "\u001b[7mkubectl get pv\u001b[27m"
+    ],
+    [
+      0.671152,
+      "\u001b[14D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mv"
+    ],
+    [
+      3.9e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.008181,
+      "\u001b]2;kubectl get pv\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.129086,
+      "NAME                                       CAPACITY   ACCESSMODES   RECLAIMPOLICY   STATUS      CLAIM                     REASON    AGE\r\npv0                                        500Mi      RWO           Retain          Available                   "
+    ],
+    [
+      5.6e-05,
+      "                    18s\r\npv1                                        500Mi      RWO           Retain          Available                                       18s\r\npv2                                        500Mi      RWO           Retain          Available                                       17s\r\npv3                                        500Mi      RWO           Retain          Available                                       17s\r\npvc-bfd46e3c-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           Delete          Bound       default/datadir-mongo-0             14s\r\npvc-bfdf343d-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           Delete          Bound       default/datadir-mongo-1             13s\r\npvc-bfea2dca-3c0a-11e7-b49d-0800278a77f4   "
+    ],
+    [
+      0.000385,
+      "500Mi      RWO           Delete          Bound       default/datadir-mongo-2             11s\r\npvc-bff2767b-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           Delete          Bound       default/datadir-mongo-3             10s\r\n"
+    ],
+    [
+      0.002948,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.000373,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.344129,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:26 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      5.7e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.613867,
+      "\u001b[7mkubectl get pvc\u001b[27m"
+    ],
+    [
+      0.78132,
+      "\u001b[15D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mv\u001b[27mc"
+    ],
+    [
+      2.6e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007026,
+      "\u001b]2;kubectl get pvc\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.193183,
+      "NAME              STATUS    VOLUME                                     CAPACITY   ACCESSMODES   AGE\r\ndatadir-mongo-0   Bound     pvc-bfd46e3c-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           20s\r\ndatadir-mongo-1   Bound     pvc-bfdf343d-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           20s\r\ndatadir-mongo-2   Bound     pvc-bfea2dca-3c0a-11e7-b49d-0800278a77f4"
+    ],
+    [
+      0.000704,
+      "   500Mi      RWO           20s\r\ndatadir-mongo-3   Bound     pvc-bff2767b-3c0a-11e7-b49d-0800278a77f4   500Mi      RWO           20s\r\n"
+    ],
+    [
+      0.00285,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.000284,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.331142,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:32 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000151,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.148347,
+      "\u001b[7mkubectl get services\u001b[27m"
+    ],
+    [
+      0.419129,
+      "\u001b[20D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27ms"
+    ],
+    [
+      4.6e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.00864,
+      "\u001b]2;kubectl get services\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.180708,
+      "NAME         CLUSTER-IP   EXTERNAL-IP   PORT(S)           AGE\r\nkubernetes   10.0.0.1     <none>        443/TCP           40d\r\nmongo        None         <none>        27017/TCP         22s\r\nmongod1      10.0.0.99    <nodes>       27017:30571/TCP   23h"
+    ],
+    [
+      6.1e-05,
+      "\r\nmongod2      10.0.0.210   <nodes>       27017:31113/TCP   23h\r\nmongod3      10.0.0.61    <nodes>       27017:32531/TCP   23h\r\n"
+    ],
+    [
+      0.003596,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.000189,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.359253,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:37 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.7e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.5e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      5.941239,
+      "\u001b[7mkubectl get statefulset \u001b[27m"
+    ],
+    [
+      0.663848,
+      "\u001b[24D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27me\u001b[27mf\u001b[27mu\u001b[27ml\u001b[27ms\u001b[27me\u001b[27mt\u001b[27m "
+    ],
+    [
+      0.817398,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      3.1e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.009992,
+      "\u001b]2;kubectl get statefulset\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.162786,
+      "NAME      DESIRED   CURRENT   AGE\r\nmongo     3         3         25s\r\n"
+    ],
+    [
+      0.003272,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.0003,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007"
+    ],
+    [
+      3.2e-05,
+      "\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.334925,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:45 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      5.2e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.0001,
+      "\u001b[?2004h"
+    ],
+    [
+      1.917137,
+      "k"
+    ],
+    [
+      0.227788,
+      "\bku"
+    ],
+    [
+      0.209066,
+      "b"
+    ],
+    [
+      0.087082,
+      "e"
+    ],
+    [
+      0.213603,
+      "c"
+    ],
+    [
+      0.241573,
+      "t"
+    ],
+    [
+      0.04233,
+      "l"
+    ],
+    [
+      0.109909,
+      " "
+    ],
+    [
+      0.904997,
+      "d"
+    ],
+    [
+      0.210595,
+      "e"
+    ],
+    [
+      0.232859,
+      "s"
+    ],
+    [
+      0.199509,
+      "c"
+    ],
+    [
+      0.167462,
+      "r"
+    ],
+    [
+      0.053245,
+      "i"
+    ],
+    [
+      0.221068,
+      "b"
+    ],
+    [
+      0.05194,
+      "e"
+    ],
+    [
+      0.14026,
+      " "
+    ],
+    [
+      0.199853,
+      "s"
+    ],
+    [
+      0.36873,
+      "t"
+    ],
+    [
+      0.239961,
+      "a"
+    ],
+    [
+      0.219944,
+      "t"
+    ],
+    [
+      0.215005,
+      "e"
+    ],
+    [
+      0.24283,
+      "f"
+    ],
+    [
+      0.104172,
+      "u"
+    ],
+    [
+      0.226243,
+      "l"
+    ],
+    [
+      0.121512,
+      "s"
+    ],
+    [
+      0.214667,
+      "e"
+    ],
+    [
+      0.201204,
+      "t"
+    ],
+    [
+      0.334814,
+      " "
+    ],
+    [
+      0.554873,
+      "m"
+    ],
+    [
+      0.230325,
+      "o"
+    ],
+    [
+      0.209339,
+      "n"
+    ],
+    [
+      0.052179,
+      "g"
+    ],
+    [
+      0.155827,
+      "o"
+    ],
+    [
+      0.309953,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007184,
+      "\u001b]2;kubectl describe statefulset mongo\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.204225,
+      "Name:\t\t\tmongo\r\nNamespace:\t\tdefault\r\nImage(s):\t\tmongo\r\nSelector:\t\tenvironment=test,role=mongo\r\nLabels:\t\t\tenvironment=test,role=mongo\r\nReplicas:\t\t3 current / 3 desired\r\nAnnotations:\t\tkubectl.kubernetes.io/last-applied-configuration={\"kind\":\"StatefulSet\",\"apiVersion\":\"apps/v1beta1\",\"metadata\":{\"name\":\"mongo\",\"creationTimestamp\":null},\"spec\":{\"replicas\":3,\"template\":{\"metadata\":{\"creationTimestamp\":null,\"labels\":{\"environment\":\"test\",\"role\":\"mongo\"}},\"spec\":{\"containers\":[{\"name\":\"mongo\",\"image\":\"mongo\",\"command\":[\"mongod\",\"--replSet\",\"rs0\",\"--smallfiles\",\"--noprealloc\"],\"ports\":[{\"containerPort\":27017}],\"resources\":{},\"volumeMounts\":[{\"name\":\"datadir\",\"mountPath\":\"/data/db\"}]}],\"terminationGracePeriodSeconds\":10}},\"volumeClaimTemplates\":[{\"metadata\":{\"name\":\"datadir\",\"creationTimestamp\":null},\"spec\":{\"accessModes\":[\"ReadWriteOnce\"],\"resources\":{\"requests\":{\"storage\":\"1Gi\"}}},\"status\":{}}],\"serviceName\":\"mongo\"},\"status\":{\"replicas\":0}}\r\nCreationTimestamp:\tThu, 18 May 2017 21:44:20 +0100\r\nPods Status:\t\t3 Running "
+    ],
+    [
+      5.3e-05,
+      "/ 0 Waiting / 0 Succeeded / 0 Failed\r\nNo volumes.\r\nEvents:\r\n  FirstSeen\tLastSeen\tCount\tFrom\t\tSubObjectPath\tType\t\tReason\t\t\tMessage\r\n  ---------\t--------\t-----\t----\t\t-------------\t--------\t------\t\t\t-------\r\n  35s\t\t35s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-0 in StatefulSet mongo successful\r\n  35s\t\t35s\t\t1\t{statefulset }\t\t\tWarning\t\tFailedCreate\t\tcreate Pod mongo-0 in StatefulSet mongo failed error: The POST operation against Pod could not be completed at this time, please try again.\r\n  31s\t\t31s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-1 in StatefulSet mongo successful\r\n  31s\t\t31s\t\t1\t{statefulset }\t\t\tWarning\t\tFailedCreate\t\tcreate Pod mongo-1 in StatefulSet mongo failed error: The POST operation against Pod could not be completed at this time, please try again.\r\n  27s\t\t27s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-2 in StatefulSet mongo successful\r\n"
+    ],
+    [
+      0.004861,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                                                \r \r"
+    ],
+    [
+      0.00023,
+      "\u001b]2;marco@Marcob-macbook: ~/MDBW17/Kubernetes/demo2\u0007\u001b]1;..ernetes/demo2\u0007"
+    ],
+    [
+      0.213522,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:44:55 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.3e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      7.314363,
+      "\r\r\u001b[A\u001b[A\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[0m\u001b[27m\u001b[24m\u001b[39m\u001b[49m\u001b[K"
+    ],
+    [
+      0.0026,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:45:02 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.537619,
+      "\r\r\u001b[A\u001b[A\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[0m\u001b[27m\u001b[24m\u001b[39m\u001b[49m\u001b[K"
+    ],
+    [
+      0.002739,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 21:45:03 \u001b[44m\u001b[37m\u001b[37m ...MDBW17/Kubernetes/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[49m\u001b[33m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.903994,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

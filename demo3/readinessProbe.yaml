@@ -1,0 +1,8 @@
+readinessProbe:
+            exec:
+              command:
+                - sh
+                - -c
+                - "/usr/bin/mongo --eval 'printjson(db.serverStatus())'"
+            initialDelaySeconds: 5
+            timeoutSeconds: 5
