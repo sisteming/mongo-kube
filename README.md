@@ -1,6 +1,8 @@
 # mongo-kube
 Deploy a Highly-Available MongoDB replica set as StatefulSet on Kubernetes
 
+------ 
+
 # 1. Deploy MongoDB on containers using Kubernetes
 
 https://github.com/sisteming/mongo-kube/tree/master/demo1
