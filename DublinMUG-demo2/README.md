@@ -48,7 +48,7 @@ kubectl apply -f demo2-headlessService.yaml
 
 ## Creating Stateful Set for the MongoDB Replica Set
 ```
-kubectl apply -f demo2-statefulSet-2703.yaml
+kubectl apply -f demo2-statefulSet.yaml
 kubectl get statefulset
 kubectl describe statefulset
 ```
