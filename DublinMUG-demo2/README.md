@@ -30,7 +30,7 @@ gcloud container clusters create dublinmugcluster1110 --num-nodes=4 --local-ssd-
 ```
 Creating cluster dublinmugcluster1110...done.
 Created [https://container.googleapis.com/v1/projects/mdbw17v1/zones/europe-west1-b/clusters/dublinmugcluster1110].
-kubeconfig entry generated for mdbw17cluster2.
+kubeconfig entry generated for dublinmugcluster1110.
 NAME            ZONE            MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION  NUM_NODES  STATUS
 dublinmugcluster1110   europe-west1-b  1.6.2           104.199.111.30  n1-standard-1  1.6.2        3          RUNNING
 ```
