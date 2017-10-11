@@ -77,7 +77,7 @@ kubectl create -f client/mb_mongo-watch-job.yaml
 ## Deploy demo to-do/Q&A application on the Kubernetes cluster
 - Deploy the app marcob/node-todo on port 8080
 	```
-	kubectl run demo-app --image=marcob/node-todo --port=8080
+	kubectl run demo-app --image=marcob/node-top5 --port=8080
 	```
 	
 - Expose the port 8080 from the demo APP on the external IP 

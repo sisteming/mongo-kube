@@ -1,5 +1,5 @@
 spec:
   containers:
   - name: todo-demo
-    image: marcob/node-todo
+    image: marcob/node-top5
     imagePullPolicy: Always
