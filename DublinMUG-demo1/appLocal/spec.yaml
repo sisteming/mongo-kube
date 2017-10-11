@@ -1,0 +1,10 @@
+apiVersion: apps/v1.beta1
+kind: Deployment
+metadata:
+  name: demo-app
+spec:  # specification of the pod's contents
+  restartPolicy: Always
+  containers:
+  - name: demo-app
+    image: marcob/node-todo
+    imagePullPolicy: Always

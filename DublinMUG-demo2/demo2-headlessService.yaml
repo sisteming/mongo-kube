@@ -1,0 +1,15 @@
+# Headless service for the StatefulSet members
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+  labels:
+    role: mongo
+spec:
+  ports:
+  - name: mongo
+    port: 27017
+    targetPort: 27017
+  clusterIP: None
+  selector:
+    role: mongo

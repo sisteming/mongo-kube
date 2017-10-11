@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-app
+spec:  # specification of the pod's contents
+  restartPolicy: Always
+  containers:
+  - name: demo-app
+    image: marcob/node-top5
+    imagePullPolicy: Always
+    ports:
+      - containerPort: 8080

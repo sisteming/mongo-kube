@@ -1,0 +1,1278 @@
+{
+  "version": 1,
+  "width": 136,
+  "height": 21,
+  "duration": 140.444033,
+  "command": null,
+  "title": "Demo 2: Replica Set as a StatefulSet - StatefulSet",
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      2.377601,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007"
+    ],
+    [
+      8.6e-05,
+      "\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.343096,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:35 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000171,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000271,
+      "\u001b[?2004h"
+    ],
+    [
+      2.453789,
+      "\u001b[H\u001b[2J\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:35 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.643336,
+      "\u001b[7mkubectl apply -f demo2-persistentVolume.yaml\u001b[27m"
+    ],
+    [
+      0.479361,
+      "\u001b[44D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mp\u001b[27me\u001b[27mr\u001b[27ms\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27me\u001b[27mn\u001b[27mt\u001b[27mV\u001b[27mo\u001b[27ml\u001b[27mu\u001b[27mm\u001b[27me\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      0.751033,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      5.1e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.006506,
+      "\u001b]2;kubectl apply -f demo2-persistentVolume.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.243132,
+      "persistentvolume \"pv0\" created\r\n"
+    ],
+    [
+      0.057995,
+      "persistentvolume \"pv1\" created\r\n"
+    ],
+    [
+      0.050952,
+      "persistentvolume \"pv2\" created\r\n"
+    ],
+    [
+      0.037166,
+      "persistentvolume \"pv3\" created\r\n"
+    ],
+    [
+      0.003042,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000273,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.20246,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:40 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000131,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      7.3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.448326,
+      "\u001b[7mkubectl get pv\u001b[27m"
+    ],
+    [
+      0.202813,
+      "\u001b[14D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mv"
+    ],
+    [
+      0.442007,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.1e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005316,
+      "\u001b]2;kubectl get pv\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.15568,
+      "NAME      CAPACITY   ACCESSMODES   RECLAIMPOLICY   STATUS      CLAIM     REASON    AGE\r\npv0       1Gi        RWO           Retain          Available                       4s"
+    ],
+    [
+      0.000142,
+      "\r\npv1       1Gi        RWO           Retain          Available                       4s\r\npv2       1Gi        RWO           Retain          Available                       4s\r\npv3       1Gi        RWO           Retain          Available                       3s\r\n"
+    ],
+    [
+      0.003212,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000268,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.290412,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:43 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      9e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      7.6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.734247,
+      "\u001b[7mkubectl apply -f demo2-persistentVolumeClaim.yaml\u001b[27m"
+    ],
+    [
+      0.203276,
+      "\u001b[49D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mp\u001b[27me\u001b[27mr\u001b[27ms\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27me\u001b[27mn\u001b[27mt\u001b[27mV\u001b[27mo\u001b[27ml\u001b[27mu\u001b[27mm\u001b[27me\u001b[27mC\u001b[27ml\u001b[27ma\u001b[27mi\u001b[27mm\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      0.608082,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005478,
+      "\u001b]2;kubectl apply -f demo2-persistentVolumeClaim.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.255753,
+      "persistentvolumeclaim \"datadir-mongo-0\" created\r\n"
+    ],
+    [
+      0.070264,
+      "persistentvolumeclaim \"datadir-mongo-1\" created\r\n"
+    ],
+    [
+      0.087125,
+      "persistentvolumeclaim \"datadir-mongo-2\" created\r\n"
+    ],
+    [
+      0.153008,
+      "persistentvolumeclaim \"datadir-mongo-3\" created\r\n"
+    ],
+    [
+      0.004318,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000267,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.296538,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:50 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      7.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000103,
+      "\u001b[?2004h"
+    ],
+    [
+      2.808433,
+      "\u001b[7mkubectl get pvc\u001b[27m"
+    ],
+    [
+      0.257623,
+      "\u001b[15D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mv\u001b[27mc"
+    ],
+    [
+      0.326817,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.8e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005216,
+      "\u001b]2;kubectl get pvc\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.174376,
+      "NAME              STATUS    VOLUME                                     CAPACITY   ACCESSMODES   AGE\r\ndatadir-mongo-0   Bound     pvc-a0891e14-54e1-11e7-adf3-0800278a77f4   1Gi        RWO           4s\r\ndatadir-mongo-1   Bound     pvc-a0941a02-54e1-11e7-adf3-0800278a77f4   1Gi        RWO"
+    ],
+    [
+      5.5e-05,
+      "           4s\r\ndatadir-mongo-2   Bound     pvc-a0a1194f-54e1-11e7-adf3-0800278a77f4   1Gi        RWO           4s\r\ndatadir-mongo-3   Bound     pvc-a0b6d271-54e1-11e7-adf3-0800278a77f4   1Gi        RWO           4s\r\n"
+    ],
+    [
+      0.003443,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.226897,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:53 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      1.9e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.573267,
+      "\u001b[7mkubectl apply -f demo2-headlessService.yaml\u001b[27m"
+    ],
+    [
+      0.211705,
+      "\u001b[43D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27mh\u001b[27me\u001b[27ma\u001b[27md\u001b[27ml\u001b[27me\u001b[27ms\u001b[27ms\u001b[27mS\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      0.861976,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005451,
+      "\u001b]2;kubectl apply -f demo2-headlessService.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.255581,
+      "service \"mongo\" created\r\n"
+    ],
+    [
+      0.004681,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000208,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.294544,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:22:59 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      0.000472,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      4.883711,
+      "\u001b[7mkubectl create -f client/mb_mongo-watch-job.yaml\u001b[27m"
+    ],
+    [
+      0.24024,
+      "\u001b[48D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mc\u001b[27mr\u001b[27me\u001b[27ma\u001b[27mt\u001b[27me\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27mc\u001b[27ml\u001b[27mi\u001b[27me\u001b[27mn\u001b[27mt\u001b[27m/\u001b[27mm\u001b[27mb\u001b[27m_\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m-\u001b[27mw\u001b[27ma\u001b[27mt\u001b[27mc\u001b[27mh\u001b[27m-\u001b[27mj\u001b[27mo\u001b[27mb\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      0.499984,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.2e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005746,
+      "\u001b]2;kubectl create -f client/mb_mongo-watch-job.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.219268,
+      "job \"mongo-watch\" created\r\n"
+    ],
+    [
+      0.003624,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000315,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.3742,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:05 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      8.1e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.1e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.964144,
+      "\u001b[7mkubectl get services\u001b[27m"
+    ],
+    [
+      0.262403,
+      "\u001b[20D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27me\u001b[27mr\u001b[27mv\u001b[27mi\u001b[27mc\u001b[27me\u001b[27ms"
+    ],
+    [
+      0.32895,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.00539,
+      "\u001b]2;kubectl get services\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.167933,
+      "NAME         CLUSTER-IP   EXTERNAL-IP   PORT(S)     AGE\r\nkubernetes   10.0.0.1     <none>        443/TCP     1d\r\nmongo        None         <none>        27017/TCP   12s\r\n"
+    ],
+    [
+      0.003785,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.319282,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:10 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.810303,
+      "\u001b[7mkubectl get jobs\u001b[27m"
+    ],
+    [
+      0.190258,
+      "\u001b[16D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mj\u001b[27mo\u001b[27mb\u001b[27ms"
+    ],
+    [
+      0.326919,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.4e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005424,
+      "\u001b]2;kubectl get jobs\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.17625,
+      "NAME"
+    ],
+    [
+      0.000388,
+      "          DESIRED   SUCCESSFUL   AGE\r\n"
+    ],
+    [
+      4.2e-05,
+      "mongo-watch   1         0            9s\r\n"
+    ],
+    [
+      0.003626,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.00028,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.305713,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:15 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.5e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.034527,
+      "\u001b[7mkubectl apply -f demo2-statefulset.yaml\u001b[27m"
+    ],
+    [
+      0.378195,
+      "\u001b[39D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ma\u001b[27mp\u001b[27mp\u001b[27ml\u001b[27my\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m \u001b[27md\u001b[27me\u001b[27mm\u001b[27mo\u001b[27m2\u001b[27m-\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27me\u001b[27mf\u001b[27mu\u001b[27ml\u001b[27ms\u001b[27me\u001b[27mt\u001b[27m.\u001b[27my\u001b[27ma\u001b[27mm\u001b[27ml"
+    ],
+    [
+      0.726165,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005518,
+      "\u001b]2;kubectl apply -f demo2-statefulset.yaml\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.13402,
+      "statefulset \"mongo\" created\r\n"
+    ],
+    [
+      0.002769,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.0004,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.537659,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:21 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      9.7e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.7e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.341559,
+      "\u001b[7mkubectl get statefulSet \u001b[27m"
+    ],
+    [
+      0.411871,
+      "\u001b[24D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27me\u001b[27mf\u001b[27mu\u001b[27ml\u001b[27mS\u001b[27me\u001b[27mt\u001b[27m "
+    ],
+    [
+      0.755028,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005659,
+      "\u001b]2;kubectl get statefulSet\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.165424,
+      "NAME      DESIRED   CURRENT   AGE\r\nmongo     3         2         5s\r\n"
+    ],
+    [
+      0.003224,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000292,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.422048,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:26 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      9.1e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.284844,
+      "kubectl get statefulSet "
+    ],
+    [
+      0.580065,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      3.9e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005379,
+      "\u001b]2;kubectl get statefulSet\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.169734,
+      "NAME      DESIRED   CURRENT   AGE\r\nmongo     3         3         9s\r\n"
+    ],
+    [
+      0.003852,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007"
+    ],
+    [
+      6.4e-05,
+      "\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.237962,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:29 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      8.4e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      3.747141,
+      "\u001b[7mkubectl describe statefulSet\u001b[27m"
+    ],
+    [
+      0.218652,
+      "\u001b[28D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27md\u001b[27me\u001b[27ms\u001b[27mc\u001b[27mr\u001b[27mi\u001b[27mb\u001b[27me\u001b[27m \u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27me\u001b[27mf\u001b[27mu\u001b[27ml\u001b[27mS\u001b[27me\u001b[27mt"
+    ],
+    [
+      0.34,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      3.4e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005509,
+      "\u001b]2;kubectl describe statefulSet\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.126626,
+      "Name:\t\t\tmongo\r\nNamespace:\t\tdefault\r\nImage(s):\t\tmongo\r\nSelector:\t\tenvironment=test,role=mongo\r\nLabels:\t\t\tenvironment=test,role=mongo\r\nReplicas:\t\t3 current / 3 desired\r\nAnnotations:\t\tkubectl.kubernetes.io/last-applied-configuration={\"kind\":\"StatefulSet\",\"apiVersion\":\"apps/v1beta1\",\"metadata\":{\"name\":\"mongo\",\"creationTimestamp\":null},\"spec\":{\"replicas\":3,\"template\":{\"metadata\":{\"creationTimestamp\":null,\"labels\":{\"environment\":\"test\",\"role\":\"mongo\"}},\"spec\":{\"containers\":[{\"name\":\"mongo\",\"image\":\"mongo\",\"command\":[\"mongod\",\"--replSet\",\"rs0\",\"--logpath\",\"/data/db/mongod.log\",\"--wiredTigerCacheSizeGB\",\"1\"],\"ports\":[{\"containerPort\":27017}],\"resources\":{},\"volumeMounts\":[{\"name\":\"datadir\",\"mountPath\":\"/data/db\"}]}],\"terminationGracePeriodSeconds\":10}},\"volumeClaimTemplates\":[{\"metadata\":{\"name\":\"datadir\",\"creationTimestamp\":null},\"spec\":{\"accessModes\":[\"ReadWriteOnce\"],\"resources\":{\"requests\":{\"storage\":\"1Gi\"}}},\"status\":{}}],\"serviceName\":\"mongo\"},\"status\":{\"replicas\":0}}\r\nCreationTimestamp:\tMon, 19 Jun 2017 07:23:"
+    ],
+    [
+      5e-05,
+      "20 -0400\r\nPods Status:\t\t3 Running / 0 Waiting / 0 Succeeded / 0 Failed\r\nNo volumes.\r\nEvents:\r\n  FirstSeen\tLastSeen\tCount\tFrom\t\tSubObjectPath\tType\t\tReason\t\t\tMessage\r\n  ---------\t--------\t-----\t----\t\t-------------\t--------\t------\t\t\t-------\r\n  13s\t\t13s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-0 in StatefulSet mongo successful\r\n  13s\t\t13s\t\t1\t{statefulset }\t\t\tWarning\t\tFailedCreate\t\tcreate Pod mongo-0 in StatefulSet mongo failed error: The POST operation against Pod could not be completed at this time, please try again.\r\n  10s\t\t10s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-1 in StatefulSet mongo successful\r\n  10s\t\t10s\t\t1\t{statefulset }\t\t\tWarning\t\tFailedCreate\t\tcreate Pod mongo-1 in StatefulSet mongo failed error: The POST operation against Pod could not be completed at this time, please try again.\r\n  8s\t\t8s\t\t1\t{statefulset }\t\t\tNormal\t\tSuccessfulCreate\tcreate Pod mongo-2 in StatefulSet mongo successful\r\n  8s\t\t8s\t\t1\t{statefulset }\t\t\tWarning\t\tFailedCreate\t\tcreate Pod mongo-2 in"
+    ],
+    [
+      0.000122,
+      " StatefulSet mongo failed error: The POST operation against Pod could not be completed at this time, please try again.\r\n"
+    ],
+    [
+      0.002057,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000284,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.264198,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:34 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.4e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      4.907735,
+      "\u001b[7mkubectl get pods -o wide\u001b[27m"
+    ],
+    [
+      0.28623,
+      "\u001b[24D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mo\u001b[27md\u001b[27ms\u001b[27m \u001b[27m-\u001b[27mo\u001b[27m \u001b[27mw\u001b[27mi\u001b[27md\u001b[27me"
+    ],
+    [
+      0.846842,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.2e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005412,
+      "\u001b]2;kubectl get pods -o wide\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.178755,
+      "NAME                READY     STATUS    RESTARTS   AGE       IP           NODE\r\nmongo-0             1/1       Running   0          20s       172.17.0.7   minikube\r\n"
+    ],
+    [
+      5.7e-05,
+      "mongo-1             1/1       Running   0          17s       172.17.0.8   minikube\r\nmongo-2             1/1       Running   0          15s       172.17.0.9   minikube\r\nmongo-watch-8vmnx   1/1       Running   0          35s       172.17.0.5   minikube\r\n"
+    ],
+    [
+      0.004021,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.325333,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:40 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      5.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000157,
+      "\u001b[?2004h"
+    ],
+    [
+      8.76542,
+      "\u001b[7mkubectl get pods | grep watch | awk '{print $1}' | xargs kubectl logs -f \u001b[27m"
+    ],
+    [
+      0.474657,
+      "\u001b[73D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mg\u001b[27me\u001b[27mt\u001b[27m \u001b[27mp\u001b[27mo\u001b[27md\u001b[27ms\u001b[27m \u001b[27m|\u001b[27m \u001b[27mg\u001b[27mr\u001b[27me\u001b[27mp\u001b[27m \u001b[27mw\u001b[27ma\u001b[27mt\u001b[27mc\u001b[27mh\u001b[27m \u001b[27m|\u001b[27m \u001b[27ma\u001b[27mw\u001b[27mk\u001b[27m \u001b[27m'\u001b[27m{\u001b[27mp\u001b[27mr\u001b[27mi\u001b[27mn\u001b[27mt\u001b[27m \u001b[27m$\u001b[27m1\u001b[27m}\u001b[27m'\u001b[27m \u001b[27m|\u001b[27m \u001b[27mx\u001b[27ma\u001b[27mr\u001b[27mg\u001b[27ms\u001b[27m \u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27ml\u001b[27mo\u001b[27mg\u001b[27ms\u001b[27m \u001b[27m-\u001b[27mf\u001b[27m "
+    ],
+    [
+      1.590099,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.4e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.007258,
+      "\u001b]2;kubectl get pods | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}  \u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.266841,
+      "Searching for initial replica set...\r\n"
+    ],
+    [
+      0.000188,
+      "Checking initial set\r\nNodes 0 to 2 are not ready yet\r\n"
+    ],
+    [
+      0.000275,
+      "Checking initial set\r\nNodes 0 to 2 are not ready yet\r\n"
+    ],
+    [
+      0.000152,
+      "Checking initial set\r\nNodes 0 to 2 are up and running\r\n"
+    ],
+    [
+      0.000241,
+      "{\r\n"
+    ],
+    [
+      3.7e-05,
+      "\t\"info2\" : \"no configuration specified. Using a default configuration for the set\",\r\n"
+    ],
+    [
+      0.000235,
+      "\t\"me\" : \"mongo-0:27017\",\r\n"
+    ],
+    [
+      0.00018,
+      "\t\"ok\" : 1\r\n"
+    ],
+    [
+      0.0002,
+      "}\r\n"
+    ],
+    [
+      0.000521,
+      "{ \"ok\" : 1 }\r\n{ \"ok\" : 1 }\r\n"
+    ],
+    [
+      0.000101,
+      "{ \"ok\" : 1 }\r\n"
+    ],
+    [
+      0.000221,
+      "Replica set configured successfully.\r\n0\r\n"
+    ],
+    [
+      2.759348,
+      "^C"
+    ],
+    [
+      0.000322,
+      "\r\n"
+    ],
+    [
+      0.000166,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000615,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.202794,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:23:54 \u001b[41m\u001b[37m\u001b[37m ✘ \u001b[44m\u001b[31m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      4.9e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      2.6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      7.240399,
+      "\u001b[7mkubectl run mongoshell0 --image=marcob/mongo-watch -i -t --rm --restart=OnFailure -- mongo --host mongo-0.mongo\u001b[27m"
+    ],
+    [
+      0.334396,
+      "\u001b[111D\u001b[27mk\u001b[27mu\u001b[27mb\u001b[27me\u001b[27mc\u001b[27mt\u001b[27ml\u001b[27m \u001b[27mr\u001b[27mu\u001b[27mn\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27ms\u001b[27mh\u001b[27me\u001b[27ml\u001b[27ml\u001b[27m0\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mi\u001b[27mm\u001b[27ma\u001b[27mg\u001b[27me\u001b[27m=\u001b[27mm\u001b[27ma\u001b[27mr\u001b[27mc\u001b[27mo\u001b[27mb\u001b[27m/\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m-\u001b[27mw\u001b[27ma\u001b[27mt\u001b[27mc\u001b[27mh\u001b[27m \u001b[27m-\u001b[27mi\u001b[27m \u001b[27m-\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mr\u001b[27mm\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mr\u001b[27me\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mr\u001b[27mt\u001b[27m=\u001b[27mO\u001b[27mn\u001b[27mF\u001b[27ma\u001b[27mi\u001b[27ml\u001b[27mu\u001b[27mr\u001b[27me\u001b[27m \u001b[27m-\u001b[27m-\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mh\u001b[27mo\u001b[27ms\u001b[27mt\u001b[27m \u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo\u001b[27m-\u001b[27m0\u001b[27m.\u001b[27mm\u001b[27mo\u001b[27mn\u001b[27mg\u001b[27mo"
+    ],
+    [
+      5.313311,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.1e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.004103,
+      "\u001b]2;kubectl run mongoshell0 --image=marcob/mongo-watch -i -t --rm  -- mongo --hos\u0007\u001b]1;kubectl\u0007"
+    ],
+    [
+      0.267377,
+      "Waiting for pod default/mongoshell0-qkrkl to be running, status is Pending, pod ready: false\r\n"
+    ],
+    [
+      1.944517,
+      "If you don't see a command prompt, try pressing enter.\n"
+    ],
+    [
+      0.74166,
+      "\u001b[14G\u001b[J\u001b[14G\r\nrs0:PRIMARY> "
+    ],
+    [
+      0.522359,
+      "\u001b[14G\u001b[J\u001b[14G\r\n"
+    ],
+    [
+      0.003002,
+      "rs0:PRIMARY> "
+    ],
+    [
+      0.171215,
+      "\u001b[14G\u001b[J\u001b[14G\r\nrs0:PRIMARY> "
+    ],
+    [
+      1.094699,
+      "r"
+    ],
+    [
+      0.215016,
+      "s"
+    ],
+    [
+      0.104978,
+      "."
+    ],
+    [
+      0.24276,
+      "s"
+    ],
+    [
+      0.335482,
+      "t"
+    ],
+    [
+      0.27993,
+      "a"
+    ],
+    [
+      0.201693,
+      "t"
+    ],
+    [
+      0.084458,
+      "u"
+    ],
+    [
+      0.135642,
+      "s"
+    ],
+    [
+      0.282003,
+      "("
+    ],
+    [
+      0.20782,
+      ")"
+    ],
+    [
+      0.958815,
+      "\u001b[14G\u001b[Jrs.status()\u001b[25G\r\n{\r\n\t\"set\" : \"rs0\",\r\n\t\"date\" : ISODate(\"2017-06-19T11:24:15.478Z\"),\r\n\t\"myState\" : 1,\r\n\t\"term\" : NumberLong(1),\r\n\t\"heartbeatIntervalMillis\" : NumberLong(2000),\r\n\t\"optimes\" : {\r\n\t\t\"lastCommittedOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t},\r\n\t\t\"appliedOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t},\r\n\t\t\"durableOpTime\" : {\r\n\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\"t\" : NumberLong(1)\r\n\t\t}\r\n\t},\r\n\t\"members\" : [\r\n\t\t{\r\n\t\t\t\"_id\" : 0,\r\n\t\t\t\"name\" : \"mongo-0.mongo:27017\",\r\n\t\t\t\"health\" : 1,\r\n\t\t\t\"state\" : 1,\r\n\t\t\t\"stateStr\" : \"PRIMARY\",\r\n\t\t\t\"uptime\" : 53,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-06-19T11:24:15Z\"),\r\n\t\t\t\"infoMessage\" : \"could not find member to sync from\",\r\n\t\t\t\"electionTime\" : Timestamp(1497871413, 1),\r\n\t\t\t\"electionDate\" : ISODate(\"2017-06-19T11:23:33Z\"),\r\n\t\t\t\"configVersion\" : 4,\r\n\t\t\t\"self\" : true\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"_id\" : 1,\r\n\t\t\t\"name\" : \"mongo-1.m"
+    ],
+    [
+      9.1e-05,
+      "ongo:27017\",\r\n\t\t\t\"health\" : 1,\r\n\t\t\t\"state\" : 2,\r\n\t\t\t\"stateStr\" : \"SECONDARY\",\r\n\t\t\t\"uptime\" : 42,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDurable\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-06-19T11:24:15Z\"),\r\n\t\t\t\"optimeDurableDate\" : ISODate(\"2017-06-19T11:24:15Z\"),\r\n\t\t\t\"lastHeartbeat\" : ISODate(\"2017-06-19T11:24:15.291Z\"),\r\n\t\t\t\"lastHeartbeatRecv\" : ISODate(\"2017-06-19T11:24:14.305Z\"),\r\n\t\t\t\"pingMs\" : NumberLong(0),\r\n\t\t\t\"syncingTo\" : \"mongo-0.mongo:27017\",\r\n\t\t\t\"configVersion\" : 4\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"_id\" : 2,\r\n\t\t\t\"name\" : \"mongo-2.mongo:27017\",\r\n\t\t\t\"health\" : 1,\r\n\t\t\t\"state\" : 2,\r\n\t\t\t\"stateStr\" : \"SECONDARY\",\r\n\t\t\t\"uptime\" : 42,\r\n\t\t\t\"optime\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDurable\" : {\r\n\t\t\t\t\"ts\" : Timestamp(1497871455, 1),\r\n\t\t\t\t\"t\" : NumberLong(1)\r\n\t\t\t},\r\n\t\t\t\"optimeDate\" : ISODate(\"2017-06-19T11:24:15Z\"),\r\n\t\t\t\"optimeDurableDate\" : ISODate(\"2017"
+    ],
+    [
+      0.000233,
+      "-06-19T11:24:15Z\"),\r\n\t\t\t\"lastHeartbeat\" : ISODate(\"2017-06-19T11:24:15.297Z\"),\r\n\t\t\t\"lastHeartbeatRecv\" : ISODate(\"2017-06-19T11:24:15.348Z\"),\r\n\t\t\t\"pingMs\" : NumberLong(0),\r\n\t\t\t\"syncingTo\" : \"mongo-0.mongo:27017\",\r\n\t\t\t\"configVersion\" : 4\r\n\t\t}\r\n\t],\r\n\t\"ok\" : 1\r\n}\r\nrs0:PRIMARY> "
+    ],
+    [
+      1.658411,
+      "\u001b[14G\u001b[Jrs.status()\u001b[25G"
+    ],
+    [
+      0.555468,
+      "."
+    ],
+    [
+      0.533265,
+      "m"
+    ],
+    [
+      0.093694,
+      "e"
+    ],
+    [
+      0.091848,
+      "m"
+    ],
+    [
+      0.231031,
+      "b"
+    ],
+    [
+      0.048446,
+      "e"
+    ],
+    [
+      0.178542,
+      "r"
+    ],
+    [
+      0.19505,
+      "s"
+    ],
+    [
+      0.481025,
+      "["
+    ],
+    [
+      0.299058,
+      "0"
+    ],
+    [
+      0.567757,
+      "]"
+    ],
+    [
+      0.701017,
+      "."
+    ],
+    [
+      0.515451,
+      "s"
+    ],
+    [
+      0.174457,
+      "t"
+    ],
+    [
+      0.152539,
+      "a"
+    ],
+    [
+      0.071627,
+      "t"
+    ],
+    [
+      0.151011,
+      "e"
+    ],
+    [
+      0.370542,
+      "S"
+    ],
+    [
+      0.255453,
+      "t"
+    ],
+    [
+      0.117114,
+      "r"
+    ],
+    [
+      0.771439,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[45G\r\n"
+    ],
+    [
+      0.000702,
+      "PRIMARY\r\nrs0:PRIMARY> "
+    ],
+    [
+      0.588267,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[45G"
+    ],
+    [
+      0.244043,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[44G"
+    ],
+    [
+      0.417643,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[43G"
+    ],
+    [
+      0.105016,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[42G"
+    ],
+    [
+      0.064968,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[41G"
+    ],
+    [
+      0.084293,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[40G"
+    ],
+    [
+      0.08322,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[39G"
+    ],
+    [
+      0.083143,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[38G"
+    ],
+    [
+      0.083318,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[37G"
+    ],
+    [
+      0.083717,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[36G"
+    ],
+    [
+      0.320709,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m0].stateStr\u001b[35G"
+    ],
+    [
+      0.358064,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m].stateStr\u001b[34G"
+    ],
+    [
+      0.100807,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m1].stateStr\u001b[35G"
+    ],
+    [
+      0.298414,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[45G\r\n"
+    ],
+    [
+      0.001348,
+      "SECONDARY\r\n"
+    ],
+    [
+      0.0013,
+      "rs0:PRIMARY> "
+    ],
+    [
+      0.519834,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[45G"
+    ],
+    [
+      0.23,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[44G"
+    ],
+    [
+      0.419354,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[43G"
+    ],
+    [
+      0.100844,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[42G"
+    ],
+    [
+      0.072926,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[41G"
+    ],
+    [
+      0.085752,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[40G"
+    ],
+    [
+      0.087227,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[39G"
+    ],
+    [
+      0.0859,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[38G"
+    ],
+    [
+      0.083553,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[37G"
+    ],
+    [
+      0.084065,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[36G"
+    ],
+    [
+      0.086456,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m1].stateStr\u001b[35G"
+    ],
+    [
+      0.690673,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m].stateStr\u001b[34G"
+    ],
+    [
+      0.042935,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m2].stateStr\u001b[35G"
+    ],
+    [
+      2.026587,
+      "\u001b[14G\u001b[Jrs.status().members[2].stateStr\u001b[45G\r\n"
+    ],
+    [
+      0.001658,
+      "SECONDARY\r\n"
+    ],
+    [
+      0.001209,
+      "rs0:PRIMARY> "
+    ],
+    [
+      4.250106,
+      "\u001b[14G\u001b[J"
+    ],
+    [
+      0.000578,
+      "rs.status().members[2].stateStr"
+    ],
+    [
+      0.000354,
+      "\u001b[45G"
+    ],
+    [
+      1.501593,
+      "\u001b[14G\u001b[Jrs.status().members[1].stateStr\u001b[45G"
+    ],
+    [
+      0.185167,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateStr\u001b[45G"
+    ],
+    [
+      0.766186,
+      "\u001b[14G\u001b[Jrs.status().members[0].stateSt\u001b[44G"
+    ],
+    [
+      0.417456,
+      "\u001b[14G\u001b[J"
+    ],
+    [
+      0.000613,
+      "rs.status().members[0].stateS\u001b[43G"
+    ],
+    [
+      0.086095,
+      "\u001b[14G\u001b[Jrs.status().members[0].state\u001b[42G"
+    ],
+    [
+      0.087876,
+      "\u001b[14G\u001b[Jrs.status().members[0].stat\u001b[41G"
+    ],
+    [
+      0.088521,
+      "\u001b[14G\u001b[Jrs.status().members[0].sta\u001b[40G"
+    ],
+    [
+      0.086449,
+      "\u001b[14G\u001b[Jrs.status().members[0].st\u001b[39G"
+    ],
+    [
+      0.239798,
+      "\u001b[14G\u001b[Jrs.status().members[0].s\u001b[38G"
+    ],
+    [
+      0.270731,
+      "\u001b[14G\u001b[Jrs.status().members[0].\u001b[37G"
+    ],
+    [
+      0.370448,
+      "n"
+    ],
+    [
+      0.116842,
+      "a"
+    ],
+    [
+      0.137969,
+      "m"
+    ],
+    [
+      0.124168,
+      "e"
+    ],
+    [
+      0.267415,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[41G\r\n"
+    ],
+    [
+      0.002096,
+      "mongo-0.mongo:27017\r\n"
+    ],
+    [
+      0.002373,
+      "rs0:PRIMARY> "
+    ],
+    [
+      0.640047,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[41G"
+    ],
+    [
+      0.270964,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[40G"
+    ],
+    [
+      0.419801,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[39G"
+    ],
+    [
+      0.087935,
+      "\u001b[14G\u001b[Jrs.status().members[0].name"
+    ],
+    [
+      0.000595,
+      "\u001b[38G"
+    ],
+    [
+      0.085232,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[37G"
+    ],
+    [
+      0.086842,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[36G"
+    ],
+    [
+      0.08749,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m0].name\u001b[35G"
+    ],
+    [
+      0.086487,
+      "\u001b[14G\u001b[Jrs.status().members[0].name\u001b[34G"
+    ],
+    [
+      0.335226,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m0].name\u001b[35G"
+    ],
+    [
+      0.321006,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m].name\u001b[34G"
+    ],
+    [
+      0.092491,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m1].name\u001b[35G"
+    ],
+    [
+      0.674266,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[41G\r\n"
+    ],
+    [
+      0.001546,
+      "mongo-1.mongo:27017\r\n"
+    ],
+    [
+      0.001569,
+      "rs0:PRIMARY> "
+    ],
+    [
+      0.464154,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[41G"
+    ],
+    [
+      0.219989,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[40G"
+    ],
+    [
+      0.416563,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[39G"
+    ],
+    [
+      0.084343,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[38G"
+    ],
+    [
+      0.085129,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[37G"
+    ],
+    [
+      0.085867,
+      "\u001b[14G\u001b[Jrs.status().members[1].name\u001b[36G"
+    ],
+    [
+      0.308378,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m1].name\u001b[35G"
+    ],
+    [
+      0.420377,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m].name\u001b[34G"
+    ],
+    [
+      0.084757,
+      "\u001b[14G\u001b[Jrs.status().members\u001b[1;34m[\u001b[0m2].name\u001b[35G"
+    ],
+    [
+      0.204001,
+      "\u001b[14G\u001b[Jrs.status().members[2].name\u001b[41G\r\nmongo-2.mongo:27017\r\n"
+    ],
+    [
+      0.001323,
+      "rs0:PRIMARY> "
+    ],
+    [
+      3.109938,
+      "\u001b[14G\u001b[J\u001b[14G^C\r\nbye\r\n"
+    ],
+    [
+      2.075697,
+      "job \"mongoshell0\" deleted\r\n"
+    ],
+    [
+      0.00261,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                                                       \r \r"
+    ],
+    [
+      0.000283,
+      "\u001b]2;marco@Marcob-macbook: ~/mongo-kube/demo2\u0007\u001b]1;..go-kube/demo2\u0007"
+    ],
+    [
+      0.193384,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\r\n\u001b[39m\u001b[0m\u001b[49m\u001b[47m\u001b[30m 07:24:51 \u001b[44m\u001b[37m\u001b[37m ~/mongo-kube/demo2 \u001b[43m\u001b[34m\u001b[37m  system \u001b[47m\u001b[33m\u001b[30m  master \u001b[31m✘\u001b[30m \u001b[34m✹\u001b[30m \u001b[33m✭\u001b[30m \u001b[49m\u001b[37m\u001b[39m\r\n\u001b[01;39m\u001b[32m$\u001b[39m \u001b[00m\u001b[K"
+    ],
+    [
+      3.4e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.9e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      1.727281,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}
