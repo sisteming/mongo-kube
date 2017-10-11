@@ -1,99 +1,136 @@
-# Demo 2 from MongoDB World 
+# Demo 2
 
-In this demo, we perform simple steps to get a MongoDB Replica Set running as a Stateful Set on Kubernetes, using minikube.
+In this demo, we perform the steps to get a MongoDB Replica Set configured and running on Kubernetes, using Google Cloud Engine.
+
 
 ---------
 
 # Screencast of Demo 2:
 
-![Demo2](demo21.gif)
+![Demo1](demo3.gif)
 
 
 ---------
 # Steps required 
 
-## Starting minikube using virtualbox
+## Configuring gcloud to work from our command line
 ```
-minikube start --memory=8096 --disk-size=20g --vm-driver=virtualbox
-Starting local Kubernetes cluster...
-Starting VM...
-SSH-ing files into VM...
-Setting up certs...
-Starting cluster components...
-Connecting to cluster...
-Setting up kubeconfig...
-Kubectl is now configured to use the cluster.
+gcloud config list project
+gcloud auth login
+gcloud auth application-default login
+gcloud config set container/use_application_default_credentials true
 ```
 
-
-
-
-
-
-## Creating Persistent Volumes, locally on the minikube node
-
+## Creating a new cluster 
 ```
-kubectl apply -f demo2-persistentVolume.yaml
-kubectl get pv
+gcloud container clusters create dublinmugcluster1110 --num-nodes=4 --local-ssd-count=1 --node-labels=env=prod,app=mongod
 ```
 
-## Creating Persistent Volume Claims
-
+### Reviewing the output from cluster creation
 ```
-kubectl apply -f demo2-persistentVolumeClaim.yaml
-kubectl get pvc
-```
-
-## Creating Headless Service _mongo_ on port 27017
-
-```
-kubectl apply -f demo2-headlessService.yaml
+Creating cluster dublinmugcluster1110...done.
+Created [https://container.googleapis.com/v1/projects/mdbw17v1/zones/europe-west1-b/clusters/dublinmugcluster1110].
+kubeconfig entry generated for mdbw17cluster2.
+NAME            ZONE            MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION  NUM_NODES  STATUS
+dublinmugcluster1110   europe-west1-b  1.6.2           104.199.111.30  n1-standard-1  1.6.2        3          RUNNING
 ```
 
-## Running mongo-watch to monitor and configure the MongoDB Replica Set once pods are running
+## Creating persistentStorage in Google Cloud using SSD
+```
+kubectl apply -f demo3-persistentStorageGCE.yaml
+```
 
+## Creating Headless Service for service _mongo_ on port 27017
+```
+kubectl apply -f demo3-headlessService.yaml
+```
+
+
+## Creating Stateful Set for the MongoDB Replica Set
+```
+kubectl apply -f demo3-statefulSet-2703.yaml
+kubectl get statefulset
+kubectl describe statefulset
+```
+
+## Review pod and pod distribution
+
+
+- Describe pod with PV 
+	```
+	kubectl describe pod mongo-0
+	```
+
+- Show pods distribution on nodes
+
+	```
+	kubectl get pods -o wide
+	```
+
+
+## Use mongo-watch to configure MongoDB Replica Set
 ```
 kubectl create -f client/mb_mongo-watch-job.yaml
-kubectl get services
-```
-kubectl get jobs
-## Creating the Stateful Set
-```
-kubectl apply -f demo2-statefulset.yaml
 ```
 
-## Reviewing the information for the Stateful Set
-```
-kubectl get statefulSet 
-kubectl describe statefulSet
-```
 
-## Monitor mongo-watch progress configuring the MongoDB Replica Set
+## Deploy demo to-do/Q&A application on the Kubernetes cluster
+- Deploy the app marcob/node-todo on port 8080
+	```
+	kubectl run demo-app --image=marcob/node-todo --port=8080
+	```
+	
+- Expose the port 8080 from the demo APP on the external IP 
+
+	```
+	kubectl expose deployment demo-app --type=LoadBalancer --name=app
+	```
+
+
+## Checking the MongoDB Replica Set status
 
 ```
-sleep 10
-kubectl get pods | grep watch | awk '{print $1}' | xargs kubectl logs -f 
-
-```
-
-## Checking the status of the MongoDB Replica Set with _rs.status()_
-
-```
-echo "Checking the status of the replica set"
-sleep 20
 kubectl run mongoshell0 --image=marcob/mongo-watch -i -t --rm --restart=OnFailure -- mongo --host mongo-0.mongo --quiet workload --eval "rs.status()"
 ```
 
-## Cleaning up the environment from demo2
+---------
+
+# Further improvements
+
+## Resource requests and limits for containers
+
+To apply resource request and limits to container for the Stateful Set, we can just define these in the container definition section for the Stateful Set YAML file.
+
+For example:
+
 ```
-kubectl delete deployment -l role=mongo
-kubectl delete jobs mongoshell0 --now
-kubectl delete pod -l role=mongo  --now
-kubectl delete job mongo-watch --now 
-kubectl delete statefulset mongo --now 
-kubectl get pods -l role=mongo
-kubectl delete service,pvc,pv -l role=mongo --now
+spec:
+  resources:
+    requests:
+      cpu: 70m
+      memory: 160Mi
+    limits:
+      cpu: 110m
+      memory: 200Mi
 ```
+
+## Readiness Probe
+
+Readiness probes in Kubernetes can be used to detect the current status of a pod. 
+
+Example of a Readiness Probe for a MongoDB pod can be:
+
+```
+readinessProbe:
+            exec:
+              command:
+                - sh
+                - -c
+                - "/usr/bin/mongo --eval 'printjson(db.serverStatus())'"
+            initialDelaySeconds: 5
+            timeoutSeconds: 5
+```
+
 
 
 
