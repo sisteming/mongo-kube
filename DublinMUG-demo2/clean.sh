@@ -12,4 +12,6 @@ echo "Checking pods with label role=mongo still running"
 kubectl get pods -l role=mongo
 echo "Deleting services, persistent volumes and persistent volume claims with label role=mongo"
 kubectl delete service,pvc,pv -l role=mongo --now
-kubectl delete service app
+kubectl delete service app mongo-0
+
+kubectl delete deployment mongod1

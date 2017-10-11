@@ -37,18 +37,18 @@ dublinmugcluster1110   europe-west1-b  1.6.2           104.199.111.30  n1-standa
 
 ## Creating persistentStorage in Google Cloud using SSD
 ```
-kubectl apply -f demo3-persistentStorageGCE.yaml
+kubectl apply -f demo2-persistentStorageGCE.yaml
 ```
 
 ## Creating Headless Service for service _mongo_ on port 27017
 ```
-kubectl apply -f demo3-headlessService.yaml
+kubectl apply -f demo2-headlessService.yaml
 ```
 
 
 ## Creating Stateful Set for the MongoDB Replica Set
 ```
-kubectl apply -f demo3-statefulSet-2703.yaml
+kubectl apply -f demo2-statefulSet-2703.yaml
 kubectl get statefulset
 kubectl describe statefulset
 ```
