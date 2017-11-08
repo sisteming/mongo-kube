@@ -1,0 +1,19 @@
+FROM alpine
+
+WORKDIR /usr/src/app
+
+RUN apk update && \
+    apk upgrade && \
+    apk add git python \
+    python-dev \
+    py-pip \
+    build-base \
+  && rm -rf /var/cache/apk/*
+
+RUN git clone https://github.com/mongodb/mongo-python-driver
+WORKDIR /usr/src/app/mongo-python-driver
+RUN python setup.py install
+
+COPY changeStreams.py .
+
+CMD [ "python","-u", "./changeStreams.py" ]

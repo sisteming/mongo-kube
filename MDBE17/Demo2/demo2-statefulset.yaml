@@ -1,0 +1,61 @@
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: mongo
+spec:
+  serviceName: "mongo"
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        role: mongo
+        environment: test 
+    spec:
+      terminationGracePeriodSeconds: 10
+      initContainers:
+          - name: init-mongo
+            image: busybox
+            command: ['sh', '-c', 'sleep 10 && until ping -c 1 `printenv | grep HOSTNAME| cut -c 10-20`; do echo waiting for mongo; sleep 20; done;']
+      containers:
+        - name: mongo
+          image: marcob/mongodb-3.6.0-rc2
+          command:
+            - mongod
+            - "--bind_ip"
+            - "0.0.0.0"
+            - "--replSet"
+            - rs0
+            - "--logpath"
+            - "/data/db/mongod.log"
+            - "--wiredTigerCacheSizeGB"
+            - '1'
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: datadir
+              mountPath: /data/db
+          
+          livenessProbe:
+            exec:
+              command:
+                - "mongo"
+                - "--eval"
+                - "db.adminCommand('ping')"
+            initialDelaySeconds: 30
+            periodSeconds: 5
+          readinessProbe:
+                exec:
+                  command:
+                    - "mongo"
+                    - "--eval"
+                    - "db.adminCommand('ping')"
+                initialDelaySeconds: 5
+                timeoutSeconds: 1
+  volumeClaimTemplates:
+  - metadata:
+      name: datadir
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi

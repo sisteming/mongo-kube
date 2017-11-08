@@ -1,0 +1,1 @@
+kubectl run mongoshell --image=mongo -i -t --rm --restart=Never -- mongo --host mongo-0.mongo

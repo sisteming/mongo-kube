@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mongo-watch
+spec:
+  template:
+    metadata:
+      name: mongo-watch
+    spec:
+      containers:
+      - name: mongo-watch
+        image: marcob/mongo-watch
+        command: ["/mongo-watch.sh"]
+      restartPolicy: OnFailure

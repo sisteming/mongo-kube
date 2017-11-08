@@ -1,0 +1,19 @@
+# Headless service for the StatefulSet members
+kind: Service
+apiVersion: v1
+metadata:
+  name: mongo
+  annotations:
+    # workaround for https://github.com/kubernetes/kubernetes/issues/39363
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+  labels:
+    role: mongo
+spec:
+  clusterIP: None
+  ports:
+  - name: mongo
+    port: 27017
+    targetPort: 27017
+  selector:
+    role: mongo
+
